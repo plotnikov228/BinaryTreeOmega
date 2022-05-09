@@ -131,13 +131,8 @@ namespace BinaryTreeOmega
         {
             if (node != null)
             {
-                if (node.Parent == null)
-                {
-                    Console.WriteLine("Первый элемент:{0}", node.Value);
-                    Console.WriteLine(" ");
-                }
-                else
-                {
+                if (node.Parent != null)
+                {                    
                     if (node.Parent.Left == node)
                     {
                         Console.WriteLine("Parent = {1}, Left = {0}", node.Value, node.Parent.Value);
